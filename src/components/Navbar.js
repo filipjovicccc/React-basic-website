@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Logo from ""
+import Logo from "../assets/socer-logo.png"
 import { Link } from "react-router-dom";
-import ReorderIcon from ""
-import "../styles/Navbar.css";
+import { BsFillBarChartFill } from "react-icons/bs";
+import "../css/Navbar.css";
 
 function Navbar() {
     const [openLinks, setOpenLinks] = useState(false);
@@ -27,7 +27,8 @@ function Navbar() {
                 <Link to="/about"> About </Link>
                 <Link to="/contact"> Contact </Link>
                 <button onClick={toggleNavbar}>
-                    <ReorderIcon />
+                    < BsFillBarChartFill />
+
                 </button>
             </div>
         </div>
